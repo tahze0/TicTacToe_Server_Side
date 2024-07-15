@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TIC TAC TOE</h1>
+    <p id="print">Player X Turn</p>
+
+    <div class="board">
+        <div class="row">
+            <input type="text" id="c1" class="cell" onclick="populate('c1');" readonly>
+            <input type="text" id="c2" class="cell" onclick="populate('c2');" readonly>
+            <input type="text" id="c3" class="cell" onclick="populate('c3');" readonly>
+        </div>
+        <div class="row">
+            <input type="text" id="c4" class="cell" onclick="populate('c4');" readonly>
+            <input type="text" id="c5" class="cell" onclick="populate('c5');" readonly>
+            <input type="text" id="c6" class="cell" onclick="populate('c6');" readonly>
+        </div>
+        <div class="row">
+            <input type="text" id="c7" class="cell" onclick="populate('c7');" readonly>
+            <input type="text" id="c8" class="cell" onclick="populate('c8');" readonly>
+            <input type="text" id="c9" class="cell" onclick="populate('c9');" readonly>
+        </div>
+    </div>
+
+    <button class="clear" onclick="clearBoard()">CLEAR</button>
+
+    <div id="leaderboard"></div>
+
+    <script src="tictactoe.js"></script>
+</body>
+</html>
