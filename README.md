@@ -41,13 +41,13 @@ New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and J
 ### Screenshots
 
 #### Board 
-![Start of the Game](images/start.png)
+![Start of the Game](images/boardfinal.png)
 
-#### Winning Player
-![During the Game](images/during.png)
+#### LeaderBoard
+![During the Game](images/leaderboardtictactoe.png)
 
 #### Game with LeaderBoard
-![Player X Won](images/x_won.png)
+![Player X Won](images/leaderboardwithboard.png)
 
 
 
