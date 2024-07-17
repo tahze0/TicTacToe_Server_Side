@@ -1,7 +1,7 @@
 # Version 2: TicTacToe_Server_Side
 
 TicTacToe_server_side game repo can be viewed through our [portfolio website](https://alperenakin.github.io/portfolio/). It is linked under the 'projects' section.
-**View the [Setting up the local server](https://github.com/tahze0/TicTacToe_Server_Side/blob/main/README.md#how-to-play) section to see how to play the game with local server
+**View the [Setting up the local server](https://github.com/tahze0/TicTacToe_Server_Side/blob/main/README.md#setting-up-the-local-server) section to see how to play the game with local server
 
 ## Version 1: TicTacToe Game without LeaderBoard/Local Server
 Our [inital game](https://alperenakin.github.io/TicTacToe/) did not have a leaderboard component (in /versions/v01).
