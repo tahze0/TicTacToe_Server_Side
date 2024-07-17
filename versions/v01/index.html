@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="tictactoe.js"></script>
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">       
+</head> 
+  
+<body> 
+
+        <h1>TIC TAC TOE</h1>
+        <p id="print">Player X Turn</p> 
+
+       
+        <div class = "board"> 
+            <div class="row"> 
+                <input type="text" id= "c1" 
+                       class="cell" onclick="populate('c1'); updateBoard();" 
+                       readonly> 
+                <input type="text" id= "c2" 
+                       class="cell" onclick="populate('c2'); updateBoard();" 
+                       readonly> 
+                <input type="text" id= "c3" 
+                class="cell" onclick="populate('c3'); updateBoard();" 
+                       readonly> 
+            </div> 
+            <div class="row"> 
+                <input type="text" id= "c4" 
+                       class="cell" onclick="populate('c4'); updateBoard();" 
+                       readonly> 
+                <input type="text" id= "c5" 
+                       class="cell" onclick="populate('c5'); updateBoard();" 
+                       readonly> 
+                <input type="text" id= "c6" 
+                       class="cell" onclick="populate('c6'); updateBoard();" 
+                       readonly> 
+            </div> 
+            <div class="row"> 
+                <input type="text" id= "c7" 
+                       class="cell" onclick="populate('c7'); updateBoard();" 
+                       readonly> 
+                <input type="text" id= "c8" 
+                       class="cell" onclick="populate('c8');updateBoard();" 
+                       readonly> 
+                <input type="text" id= "c9" 
+                       class="cell" onclick="populate('c9');updateBoard();" 
+                       readonly> 
+            </div> 
+        </div> 
+        
+        
+        <button class="clear" onclick="clearBoard()"> 
+            CLEAR
+        </button> 
+  
+</body> 
+  
+</html>
