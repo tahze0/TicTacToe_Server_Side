@@ -8,7 +8,7 @@ Our [inital game](https://alperenakin.github.io/TicTacToe/) did not have a leade
 
 Repo: [version 1](https://github.com/AlperenAkin/TicTacToe)
 
-## Version 2: Using php to manage server side interaction and store winner data (LeaderBoard)
+## Version 2: Using php to manage server side interactions and store winner data (LeaderBoard)
 
 New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and JavaScript.
 
@@ -32,7 +32,7 @@ New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and J
 
 ### Features
 
-- Leaderboard to keep track od the winners of the last 10 games
+- Leaderboard to keep track the winners of the last 10 games
 - Smooth transition effects for cell interactions.
 - Visual indication of the player's turn.
 - Clear button to reset the game board.
