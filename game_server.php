@@ -38,7 +38,7 @@ function isBoardFull($board) {
     return !in_array('', $board);
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST')  {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
     
     if (isset($data['action'])) {
@@ -49,18 +49,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')  {
                     if ($_SESSION['game_state']['board'][$cell] === '') {
                         $_SESSION['game_state']['board'][$cell] = $_SESSION['game_state']['current_player'];
                         
-                        $winner =  checkWinner($_SESSION['game_state']['board']);
+                        $winner = checkWinner($_SESSION['game_state']['board']);
                         if ($winner) {
                             $_SESSION['game_state']['game_over'] = true;
                             $_SESSION['game_state']['winner'] = $winner;
-                            //add to leaderboard
+                            // Add to leaderboard
                             $_SESSION['leaderboard'][] = $winner;
-                            $_SESSION['leaderboard'] = array_slice($_SESSION['leaderboard'], -10);
                         } elseif (isBoardFull($_SESSION['game_state']['board'])) {
                             $_SESSION['game_state']['game_over'] = true;
+                            // Add tie to leaderboard
+                            $_SESSION['leaderboard'][] = 'Tie';
                         } else {
                             $_SESSION['game_state']['current_player'] = ($_SESSION['game_state']['current_player'] === 'X') ? 'O' : 'X';
                         }
+                        // Keep only the last 10 games
+                        $_SESSION['leaderboard'] = array_slice($_SESSION['leaderboard'], -10);
                     }
                 }
                 break;

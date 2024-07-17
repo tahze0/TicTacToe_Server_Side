@@ -45,8 +45,9 @@ function highlightWinningCells(board, winner) {
 function updateLeaderboard(leaderboard) {
     const leaderboardElement = document.getElementById('leaderboard');
     leaderboardElement.innerHTML = '<h2>Leaderboard</h2>';
-    leaderboard.forEach((winner, index) => {
-        leaderboardElement.innerHTML += `<p>${index + 1}. Player ${winner}</p>`;
+    leaderboard.forEach((result, index) => {
+        let resultText = result === 'Tie' ? 'Tie Game' : `Player ${result} won`;
+        leaderboardElement.innerHTML += `<p>${index + 1}. ${resultText}</p>`;
     });
 }
 
