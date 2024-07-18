@@ -27,8 +27,7 @@ New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and J
 - Players take turns clicking on the empty cells.
 - The first player to get three of their marks in a row (horizontally, vertically, or diagonally) wins.
 - If all the cells are filled and neither player has three in a row, the game is a draw.
-- Most wins out of the 10 games is the winner. Draws dont count as a game.
-  If both players have 5 wins, winner of the next game takes it all.
+- Most wins out of the 10 games is the winner.
 
 ### Features
 
@@ -40,7 +39,7 @@ New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and J
 
 ### Screenshots
 
-#### Board 
+#### Board with Winner
 ![board](images/boardfinal.png)
 
 #### LeaderBoard
@@ -48,6 +47,14 @@ New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and J
 
 #### Game with LeaderBoard
 ![together](images/leaderboardwithboard.png)
+
+#### Board with Tie
+![tie](images/boardwithtie)
+
+#### LeaderBoard with Tie
+![tie](images/leaderboardwithtie)
+
+
 
 
 
