@@ -49,10 +49,10 @@ New version of the Tic Tac Toe game implemented using HTML, CSS, PHP, AJAX and J
 ![together](images/leaderboardwithboard.png)
 
 #### Board with Tie
-![tie](images/boardwithtie)
+![tie](images/boardwithtie.png)
 
 #### LeaderBoard with Tie
-![tie](images/leaderboardwithtie)
+![tie](images/leaderboardwithtie.png)
 
 
 
